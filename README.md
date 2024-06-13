@@ -2,4 +2,5 @@
 
 # Aplicações 
 pyautoguii -> instagram
+
 pyautoguii -> piano_e_guitarflash   
