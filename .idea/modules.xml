@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/projetos pyautogui.iml" filepath="$PROJECT_DIR$/.idea/projetos pyautogui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Selenium_Start.iml" filepath="$PROJECT_DIR$/.idea/Selenium_Start.iml" />
     </modules>
   </component>
 </project>
