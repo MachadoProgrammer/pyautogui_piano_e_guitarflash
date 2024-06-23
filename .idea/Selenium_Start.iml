@@ -7,4 +7,18 @@
     <orderEntry type="jdk" jdkName="Python 3.12 (seleniumn)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/selenium_site" />
+      </list>
+    </option>
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/selenium_site" />
+      </list>
+    </option>
+  </component>
 </module>

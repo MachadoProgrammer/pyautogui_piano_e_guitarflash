@@ -25,7 +25,7 @@ def iniciar_driver(site_url, detach=False, headless=False):
         --disable-gpu # Desabilita renderização com GPU
         '''
 
-        arguments = ['--lang=pt-BR', '--window-size=800,800', '--disable-notifications']
+        arguments = ['--lang=pt-BR', '--window-size=1300,1000', '--disable-notifications']
         for argument in arguments:
             chorme_options.add_argument(argument)
 
