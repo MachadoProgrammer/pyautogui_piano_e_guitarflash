@@ -20,7 +20,8 @@ driver.execute_script('arguments[0].click();', botao_janela)
 janelas = driver.window_handles
 for janela in janelas:
     if janela != janela_inicial:
-        driver.switch_to.window(janela)
+
+        driver.switch_to.window()
         sleep(2)
         campo_pesquisa = driver.find_element(By.ID, 'campo_pesquisa')
         sleep(2)

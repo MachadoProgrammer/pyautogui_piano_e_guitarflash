@@ -2,7 +2,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import *
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support import expected_conditions
 import logging as lg
 
 # Firefox -> geckodriver
@@ -64,7 +67,19 @@ def iniciar_driver(site_url, detach=False, headless=False):
         driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chorme_options)
         driver.get(site_url)
 
-        return driver
+        wait = WebDriverWait(
+            driver,
+            10,
+            poll_frequency=1,
+            ignored_exceptions=[
+                    NoSuchElementException,
+                    ElementNotVisibleException,
+                    ElementNotSelectableException,
+                    TimeoutException
+            ]
+        )
+
+        return driver, wait
     except Exception as e:
         lg.error(f'Error occurred while initializng driver: {type(e).__name__} - {e}')
         return None

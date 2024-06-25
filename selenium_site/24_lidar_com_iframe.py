@@ -5,7 +5,6 @@ from app import iniciar_driver
 
 driver = iniciar_driver('https://cursoautomacao.netlify.app/', True, False)
 
-
 driver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
 sleep(1)
 # Encontrar a iframe
